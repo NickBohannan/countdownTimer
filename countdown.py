@@ -39,7 +39,6 @@ def chooseSeconds():
 def tick(minute, seconds):
     if minute == 0 and seconds == 0:
         sys.stdout.write("\r" + str(minute)+':0'+str(seconds))
-        time.sleep(1)
         return 0
     elif seconds < 10:
         if seconds == 0:
